@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+
+    transition: filter 3s ease;
+}
+
+.statsBox {
+    position: fixed;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    margin: 10px;
+    cursor: pointer;
+    opacity: 0.9;
+    z-index: 10000
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    overflow: hidden;
+    font-family: arial;
+}
+
+.controls-card {
+    z-index: 3;
+    display: none;
+    color: #fff;
+    position: absolute;
+    border-radius: 3px;
+    text-shadow: 1px 1px 0px #000, 0px 1px 2px #000c;
+    overflow: hidden;
+    bottom: 0;
+    top: 80px;
+    margin: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    user-select: none;
+    pointer-events: none;
+}
+
+.controls-title {
+    font-family: Roboto;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 33px;
+}
+
+.controls-ctrl {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.controls-card .keyboard {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    height: 30px;
+}
+
+.controls-card .mouse {
+    max-height: 34px;
+    margin: -2px 0px;
+}
+
+.controls-card .key {
+    text-shadow: none;
+    display: inline-block;
+    font-family: monospace;
+    padding: 2px 5px;
+    margin-right: 2px;
+    min-width: 10px;
+    text-align: center;
+    margin-left: 2px;
+    background: #eff0f2;
+    box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #000;
+    color: #111;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.ctrl-desc {
+    margin-left: 5px;
+}
+
+.controls-card .menu-arrow {
+    position: absolute;
+    right: 8px;
+    height: 24px;
+    top: 14px;
+    transition: all 0.2s ease;
+    transform: rotate(180deg);
+}
+
+#loader {
+    z-index: 6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    text-shadow: 0px 1px 1px black, 0px 0px 7px black;
+}
